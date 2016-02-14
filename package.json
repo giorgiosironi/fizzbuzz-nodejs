@@ -8,12 +8,14 @@
     "url": "git@github.com:giorgiosironi/fizzbuzz-javascript.git"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
     "chai": "*",
     "jshint": "^2.9.1",
     "mocha": "*"
   },
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha .",
+    "test": "node_modules/mocha/bin/mocha --compilers js:babel-register .",
     "jshint": "node_modules/jshint/bin/jshint ."
   },
   "keywords": [

@@ -27,4 +27,5 @@ var fizzbuzz = function(number) {
   }
 };
 
-module.exports = fizzbuzz;
+export default fizzbuzz;
+

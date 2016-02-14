@@ -1,6 +1,6 @@
 'use strict';
 
-var fizzbuzz = require('./fizzbuzz');
+import fizzbuzz from './fizzbuzz';
 
 describe('FizzBuzz algorithm', function() {
   it('should return Fizz for multiples of 3', function() {
@@ -24,9 +24,9 @@ describe('FizzBuzz algorithm', function() {
   });
 
   it('should refuse non-numerical input', function() {
-    expect(function() { fizzbuzz(undefined); })
+    expect(() =>  { fizzbuzz(undefined); })
       .to.throw(TypeError);
-    expect(function() { fizzbuzz(undefined); })
+    expect(() => { fizzbuzz(undefined); })
       .to.throw(/"undefined" is not a valid input/);
   });
 });
