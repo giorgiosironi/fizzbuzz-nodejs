@@ -12,4 +12,9 @@ describe("FizzBuzz algorithm", function() {
     expect(FizzBuzz(5)).to.equal("Buzz");
     expect(FizzBuzz(10)).to.equal("Buzz");
   });
+
+  it("should return the number itself when not a multiple of these factors", function() {
+    expect(FizzBuzz(2)).to.equal("2");
+    expect(FizzBuzz(14)).to.equal("14");
+  });
 });
