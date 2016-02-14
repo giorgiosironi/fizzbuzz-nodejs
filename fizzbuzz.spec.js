@@ -2,6 +2,7 @@
 
 import fizzbuzz from './fizzbuzz';
 
+// TODO: should all function() be substituted by arrows functions by default?
 describe('FizzBuzz algorithm', function() {
   it('should return Fizz for multiples of 3', function() {
     expect(fizzbuzz(3)).to.equal('Fizz');

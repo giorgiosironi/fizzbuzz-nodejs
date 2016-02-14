@@ -1,6 +1,6 @@
 'use strict';
 
-var multipleOf = function(factor, number) {
+var multipleOf = (factor, number) => {
   return number % factor === 0;
 };
 
@@ -8,9 +8,9 @@ var mappings = new Map();
 mappings.set(3, 'Fizz');
 mappings.set(5, 'Buzz');
 
-var fizzbuzz = function(number) {
+var fizzbuzz = (number) => {
   if ((typeof number) !== 'number') {
-    throw new TypeError('"' + number + '" is not a valid input');
+    throw new TypeError(`"${number}" is not a valid input`);
   }
   var words = [];
   for (let [factor, word] of mappings.entries()) {
