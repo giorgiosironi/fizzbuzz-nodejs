@@ -8,11 +8,13 @@
     "url": "git@github.com:giorgiosironi/fizzbuzz-javascript.git"
   },
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*"
+    "chai": "*",
+    "jshint": "^2.9.1",
+    "mocha": "*"
   },
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha ."
+    "test": "node_modules/mocha/bin/mocha .",
+    "jshint": "node_modules/jshint/bin/jshint ."
   },
   "keywords": [
     "fizzbuzz",

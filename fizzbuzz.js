@@ -1,7 +1,7 @@
 'use strict';
 
 var multipleOf = function(factor, number) {
-  return number % factor == 0;
+  return number % factor === 0;
 };
 
 var FizzBuzz = function(number) {
