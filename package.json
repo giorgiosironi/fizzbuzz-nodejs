@@ -1,0 +1,21 @@
+{
+  "name": "fizzbuzz-javascript",
+  "version": "0.0.1",
+  "description": "FizzBuzz kata with Node.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:giorgiosironi/fizzbuzz-javascript.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fizzbuzz",
+    "javascript",
+    "node",
+    "mocha"
+  ],
+  "author": "Giorgio Sironi",
+  "license": "MIT"
+}
