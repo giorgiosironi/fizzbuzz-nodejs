@@ -22,4 +22,11 @@ describe('FizzBuzz algorithm', function() {
     expect(fizzbuzz(2)).to.equal('2');
     expect(fizzbuzz(14)).to.equal('14');
   });
+
+  it('should refuse non-numerical input', function() {
+    expect(function() { fizzbuzz(undefined); })
+      .to.throw(TypeError);
+    expect(function() { fizzbuzz(undefined); })
+      .to.throw(/"undefined" is not a valid input/);
+  });
 });

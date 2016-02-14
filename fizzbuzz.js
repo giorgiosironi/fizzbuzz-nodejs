@@ -10,6 +10,9 @@ var mappings = [
 ];
 
 var fizzbuzz = function(number) {
+  if ((typeof number) !== 'number') {
+    throw new TypeError('"' + number + '" is not a valid input');
+  }
   var words = mappings
     .filter(function(mapping) {
       return multipleOf(mapping.factor, number);
