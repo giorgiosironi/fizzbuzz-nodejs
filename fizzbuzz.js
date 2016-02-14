@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var multipleOf = function(factor, number) {
   return number % factor == 0;
@@ -6,8 +6,8 @@ var multipleOf = function(factor, number) {
 
 var FizzBuzz = function(number) {
   var mappings = [
-    { factor: 3, word: "Fizz" },
-    { factor: 5, word: "Buzz" }
+    { factor: 3, word: 'Fizz' },
+    { factor: 5, word: 'Buzz' }
   ];
   var words = mappings
     .filter(function(mapping) {
@@ -17,7 +17,7 @@ var FizzBuzz = function(number) {
       return mapping.word;
     });
   if (words.length > 0) {
-    return words.join("");
+    return words.join('');
   } else {
     return number.toString();
   }

@@ -1,9 +1,6 @@
-"use strict";
-// TODO: single vs double quotes convention
+'use strict';
 
-var chai = require("chai");
+var chai = require('chai');
 
-// TODO: choose one
 global.expect = chai.expect;
-
 
