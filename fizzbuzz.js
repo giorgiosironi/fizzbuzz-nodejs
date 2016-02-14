@@ -4,7 +4,7 @@ var multipleOf = function(factor, number) {
   return number % factor === 0;
 };
 
-var FizzBuzz = function(number) {
+var fizzbuzz = function(number) {
   var mappings = [
     { factor: 3, word: 'Fizz' },
     { factor: 5, word: 'Buzz' }
@@ -23,4 +23,4 @@ var FizzBuzz = function(number) {
   }
 };
 
-module.exports = FizzBuzz;
+module.exports = fizzbuzz;
