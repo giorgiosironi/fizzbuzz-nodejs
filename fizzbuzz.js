@@ -4,11 +4,12 @@ var multipleOf = function(factor, number) {
   return number % factor === 0;
 };
 
+var mappings = [
+  { factor: 3, word: 'Fizz' },
+  { factor: 5, word: 'Buzz' }
+];
+
 var fizzbuzz = function(number) {
-  var mappings = [
-    { factor: 3, word: 'Fizz' },
-    { factor: 5, word: 'Buzz' }
-  ];
   var words = mappings
     .filter(function(mapping) {
       return multipleOf(mapping.factor, number);
